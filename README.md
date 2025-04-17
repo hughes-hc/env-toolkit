@@ -14,40 +14,53 @@
 ### 远程执行（推荐）
 
 #### Windows
-```powershell
-# 安装 Docker
-curl -o- https://raw.githubusercontent.com/hughes-hc/env-toolkit/main/scripts/windows/install_docker.ps1 | powershell -Command -
 
-# 安装其他软件
+**安装 Docker**
+```powershell
+curl -o- https://raw.githubusercontent.com/hughes-hc/env-toolkit/main/scripts/windows/install_docker.ps1 | powershell -Command -
+```
+
+**安装其他软件**
+```powershell
 curl -o- https://raw.githubusercontent.com/hughes-hc/env-toolkit/main/scripts/windows/install_software_name.ps1 | powershell -Command -
 ```
 
-#### CentOS/Ubuntu
-```bash
-# 安装 Docker
-curl -s https://raw.githubusercontent.com/hughes-hc/env-toolkit/main/scripts/centos/install_docker.sh | bash
+#### Ubuntu/CentOs
 
-# 安装其他软件
-curl -s https://raw.githubusercontent.com/hughes-hc/env-toolkit/main/scripts/centos/install_software_name.sh | bash
+**安装 Docker**
+```bash
+curl -s https://raw.githubusercontent.com/hughes-hc/env-toolkit/main/scripts/ubuntu/install_docker.sh | bash
+```
+
+**安装其他软件**
+> 替换install_software_name为目标脚本文件名，CentOs注意还需替换文件夹名称。
+```bash
+curl -s https://raw.githubusercontent.com/hughes-hc/env-toolkit/main/scripts/ubuntu/install_software_name.sh | bash
 ```
 
 ### 本地执行
 
 #### Windows
-```powershell
-# 执行 Docker 安装脚本
-.\install_docker.ps1
 
-# 执行其他脚本
+**执行 Docker 安装脚本**
+```powershell
+.\install_docker.ps1
+```
+
+**执行其他脚本**
+```powershell
 .\install_software_name.ps1
 ```
 
-#### CentOS/Ubuntu
-```bash
-# 执行 Docker 安装脚本
-bash install_docker.sh
+#### Ubuntu
 
-# 执行其他脚本
+**执行 Docker 安装脚本**
+```bash
+bash install_docker.sh
+```
+
+**执行其他脚本**
+```bash
 bash install_software_name.sh
 ```
 
