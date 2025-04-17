@@ -15,7 +15,7 @@ sudo apt install -y \
 echo "🔐 添加 Docker GPG 密钥..."
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
-    sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    sudo gpg --dearmor --yes -o /etc/apt/keyrings/docker.gpg
 
 echo "📝 添加 Docker 仓库..."
 sudo mkdir -p /etc/apt/sources.list.d
